@@ -7,6 +7,8 @@ body{
     justify-content: center; /* center items vertically (optional) */
     margin: 0;          /* remove default browser margin */
     padding-top: 50px;
+    height: 100%;
+    overflow: hidden;
 }
 
 h1{
@@ -15,7 +17,8 @@ h1{
 }
 
 .message{
-    font-family:'Comic Sans MS';
+    font-family:'Comic Neue';
+    font-weight: bold;
     display:inline-block;
     padding: 8px 16px;
     margin: 6px;
@@ -64,8 +67,9 @@ h1{
 }
 
 input[type="text"]{ 
-    font-family: "Comic Sans MS";
+    font-family: "Comic Neue";
     font-size: 16px;
+    font-weight: bold;
 }
 
 #input:focus{
@@ -79,8 +83,9 @@ button{
     border:none;
     color:white;
     background-color: rgb(214, 21, 0);
-    font-family: "Comic Sans MS";
+    font-family: "Comic Neue";
     font-size: 16px;
+    font-weight: bold;
     padding: 8px 16px;
 
 }
