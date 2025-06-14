@@ -1,6 +1,7 @@
 body{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color:rgb(255, 191, 28);
+    /* background-color:rgb(255, 191, 28); */
+    background-color: blue;
     display: flex;
     flex-direction: column; /* stack children vertically */
     align-items: center;    /* center items horizontally */
