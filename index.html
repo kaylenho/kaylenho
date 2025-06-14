@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Dad-X</title>
+    <script src="index.js" defer></script>
+    <link rel = "stylesheet" href="style.css?v=1">
+</head>
+<body>
+    <div>
+        <h1>Chat with Dad-X</h1>
+    </div>
+    <div id="chatbox" class="chatbox">
+    </div>
+    <div id="textbox">
+        <input type="text" id="input" placeholder="Type a message" onkeydown="if(event.key === 'Enter') sendMessage()">
+        <button onclick="sendMessage()">Ask
+        </button>
+    </div>
+</body>
+</html>

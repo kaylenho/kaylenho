@@ -1,0 +1,121 @@
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:rgb(255, 191, 28);
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* center items horizontally */
+    justify-content: center; /* center items vertically (optional) */
+    margin: 0;          /* remove default browser margin */
+    padding-top: 50px;
+}
+
+h1{
+    text-align:center;
+    font-weight: normal;
+}
+
+.message{
+    font-family:'Comic Sans MS';
+    display:inline-block;
+    padding: 8px 16px;
+    margin: 6px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.message.user{
+    background-color:rgb(214, 21, 0);
+    color:white;
+    align-self: flex-end;
+    border-radius: 20px 0px 20px 20px;
+}
+
+.message.bot{
+    background-color:rgb(211, 211, 211);
+    align-self: flex-start;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.chatbox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 12px 16px 16px;
+    height: 400px;
+    overflow-y: auto;
+    background: #f5f5f5;
+    border-radius: 20px;
+    width: 400px;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+#textbox{
+    display: flex;
+    width: 432px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+#input{
+    width: 325px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+input[type="text"]{ 
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+}
+
+#input:focus{
+    border-color: rgb(214, 21, 0);
+    outline: none;
+}
+
+button{
+    /*border: 5px solid rgb(0, 0, 0);*/
+    border-radius: 10px;
+    border:none;
+    color:white;
+    background-color: rgb(214, 21, 0);
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    padding: 8px 16px;
+
+}
+
+button:focus{
+    border:none;
+    outline:none;
+}
+
+button:hover{
+    background-color:white;
+    color:rgb(214, 21, 0);
+}
+
+.chatbox::-webkit-scrollbar {
+  width: 12px;               /* width of vertical scrollbar */
+  height: 12px;              /* height of horizontal scrollbar (if any) */
+}
+
+.chatbox::-webkit-scrollbar-track {
+  background: #f5f5f5;       /* background of the scrollbar track */
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+  background: rgb(195, 195, 195);  /* scrollbar thumb color */
+  border-radius: 20px;
+  border: 3px solid #f5f5f5; /* padding around thumb for rounded look */
+}
+
+.img-message{
+    background:none !important;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
