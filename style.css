@@ -6,7 +6,7 @@ body{
     align-items: center;    /* center items horizontally */
     justify-content: center; /* center items vertically (optional) */
     margin: 0;          /* remove default browser margin */
-    padding-top: 50px;
+    padding-top: 25px;
     height: 100%;
     overflow: hidden;
 }
@@ -142,6 +142,10 @@ button:hover{
 
   #input {
     width: 325px;
+  }
+
+  .message{
+    max-width: 200px;
   }
 
   /* button {
